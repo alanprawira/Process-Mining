@@ -29,6 +29,9 @@ print(f"Successfully loaded {len(log)} traces.")
 
 log
 
+end_activities = pm4py.get_end_activities(log)
+end_activities
+
 """# **Describe Data**"""
 
 df_view = pm4py.convert_to_dataframe(log)
